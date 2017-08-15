@@ -10,6 +10,7 @@
 		C80B19CD1F3D0AF900164453 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80B19CB1F3D0AF900164453 /* ShoutOut.xcdatamodeld */; };
 		C80B19CF1F3D0B3D00164453 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B19CE1F3D0B3D00164453 /* CoreDataStack.swift */; };
 		C80B19D11F3EA52500164453 /* ShoutOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B19D01F3EA52500164453 /* ShoutOut.swift */; };
+		C833F3EC1F42420C00A23894 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833F3EB1F42420C00A23894 /* Employee.swift */; };
 		F2530B671D985E400029B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B661D985E400029B14E /* AppDelegate.swift */; };
 		F2530B6C1D985E400029B14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6A1D985E400029B14E /* Main.storyboard */; };
 		F2530B6E1D985E400029B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2530B6D1D985E400029B14E /* Assets.xcassets */; };
@@ -33,7 +34,8 @@
 /* Begin PBXFileReference section */
 		C80B19CC1F3D0AF900164453 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
 		C80B19CE1F3D0B3D00164453 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		C80B19D01F3EA52500164453 /* ShoutOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoutOut.swift; path = ../../../../../../Github/IOSSwiftCoreDataExample/ShoutOut.swift; sourceTree = "<group>"; };
+		C80B19D01F3EA52500164453 /* ShoutOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoutOut.swift; sourceTree = "<group>"; };
+		C833F3EB1F42420C00A23894 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2530B661D985E400029B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2530B6B1D985E400029B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				C80B19CB1F3D0AF900164453 /* ShoutOut.xcdatamodeld */,
 				C80B19D01F3EA52500164453 /* ShoutOut.swift */,
+				C833F3EB1F42420C00A23894 /* Employee.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C80B19CD1F3D0AF900164453 /* ShoutOut.xcdatamodeld in Sources */,
+				C833F3EC1F42420C00A23894 /* Employee.swift in Sources */,
 				F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */,
 				F2530B671D985E400029B14E /* AppDelegate.swift in Sources */,
 				C80B19D11F3EA52500164453 /* ShoutOut.swift in Sources */,
