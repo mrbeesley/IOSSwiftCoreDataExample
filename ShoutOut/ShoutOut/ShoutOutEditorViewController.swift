@@ -28,13 +28,6 @@ class ShoutOutEditorViewController: UIViewController, ManagedObjectContextDepend
 		super.viewDidLoad()
         
         fetchEmployees()
-        
-        let shoutOutsFetchRequest = NSFetchRequest<ShoutOut>(entityName: ShoutOut.entityName)
-        
-        do {
-            let shoutOuts = try self.managedObjectContext.fetch(shoutOutsFetchRequest)
-            print(shoutOuts)
-        } catch _ {}
 		
         self.toEmployeePicker.dataSource = self
         self.toEmployeePicker.delegate = self
@@ -44,13 +37,27 @@ class ShoutOutEditorViewController: UIViewController, ManagedObjectContextDepend
         self.shoutCategoryPicker.delegate = self
         self.shoutCategoryPicker.tag = 1
         
-        self.shoutOut = NSEntityDescription.insertNewObject(forEntityName: ShoutOut.entityName, into: self.managedObjectContext) as! ShoutOut
+        self.shoutOut = self.shoutOut ?? NSEntityDescription.insertNewObject(forEntityName: ShoutOut.entityName, into: self.managedObjectContext) as! ShoutOut
+        
+        setUIValues()
         
 		messageTextView.layer.borderWidth = CGFloat(0.5)
 		messageTextView.layer.borderColor = UIColor(colorLiteralRed: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor
 		messageTextView.layer.cornerRadius = 5
 		messageTextView.clipsToBounds = true
 	}
+    
+    //MARK: Helper Functions
+    func setUIValues() {
+        let selectedEmployeeRow = self.employees.index(of: self.shoutOut.toEmployee) ??  0
+        self.toEmployeePicker.selectRow(selectedEmployeeRow, inComponent: 0, animated: true)
+        
+        let selectedShoutCategoryRow = self.shoutCategories.index(of: self.shoutOut.shoutCategory) ?? 0
+        self.shoutCategoryPicker.selectRow(selectedShoutCategoryRow, inComponent: 0, animated: true)
+        
+        self.messageTextView.text = self.shoutOut.message
+        self.fromTextField.text = self.shoutOut.from
+    }
     
     func fetchEmployees() {
         let employeeFetchRequest = NSFetchRequest<Employee>(entityName: Employee.entityName)

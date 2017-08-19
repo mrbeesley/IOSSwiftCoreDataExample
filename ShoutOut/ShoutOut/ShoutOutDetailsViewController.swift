@@ -17,6 +17,15 @@ class ShoutOutDetailsViewController: UIViewController, ManagedObjectContextDepen
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUIValues()
+    }
+    
+    //MARK: UI Helper functions
+    func setUIValues() {
+        self.shoutCategoryLabel.text = self.shoutOut.shoutCategory
+        self.messageTextView.text = self.shoutOut.message
+        self.fromLabel.text = self.shoutOut.from
     }
 	
 	// MARK: - Navigation
@@ -27,6 +36,7 @@ class ShoutOutDetailsViewController: UIViewController, ManagedObjectContextDepen
         let navigationController = segue.destination as! UINavigationController
         let destinationVC = navigationController.viewControllers[0] as! ShoutOutEditorViewController
         destinationVC.managedObjectContext = self.managedObjectContext
+        destinationVC.shoutOut = self.shoutOut
 	}
     
     
