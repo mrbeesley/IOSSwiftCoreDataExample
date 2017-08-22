@@ -40,6 +40,7 @@
 		C833F3EB1F42420C00A23894 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		C833F3ED1F43821500A23894 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C833F3EF1F43855E00A23894 /* SaveAccessDelete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAccessDelete.swift; sourceTree = "<group>"; };
+		C8E8D05F1F4C799F00FEBE34 /* ShoutOut 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ShoutOut 2.xcdatamodel"; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2530B661D985E400029B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2530B6B1D985E400029B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -485,9 +486,10 @@
 		C80B19CB1F3D0AF900164453 /* ShoutOut.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C8E8D05F1F4C799F00FEBE34 /* ShoutOut 2.xcdatamodel */,
 				C80B19CC1F3D0AF900164453 /* ShoutOut.xcdatamodel */,
 			);
-			currentVersion = C80B19CC1F3D0AF900164453 /* ShoutOut.xcdatamodel */;
+			currentVersion = C8E8D05F1F4C799F00FEBE34 /* ShoutOut 2.xcdatamodel */;
 			path = ShoutOut.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
